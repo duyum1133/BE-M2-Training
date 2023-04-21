@@ -70,3 +70,5 @@ atlassian*
 .DS_Store
 var/log/debug.log
 var/log/system.log
+node_modules
+node_modules
