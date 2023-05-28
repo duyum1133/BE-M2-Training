@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+      <add id="Coffeemug_ControllerExample::greetings" title="Greetings" translate="title" module="Coffeemug_ControllerExample" parent="Magento_Backend::content" sortOrder="50" dependsOnModule="Coffeemug_ControllerExample" resource="Coffeemug_ControllerExample::greetings"/>
+      <add id="Coffeemug_ControllerExample::greetings_secret" title="Hello World" translate="title" module="Coffeemug_ControllerExample" parent="Coffeemug_ControllerExample::greetings" sortOrder="10" dependsOnModule="Coffeemug_ControllerExample" action="controllerex/secret" resource="Coffeemug_ControllerExample::greetings"/>
+    </menu>
+</config>
