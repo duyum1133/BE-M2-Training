@@ -3,4 +3,6 @@
     <type name="Magento\Catalog\Controller\Product\View">
         <plugin name="coffeemug_productview_plugin" type="Coffeemug\ControllerExample\Plugin\Catalog\ProductView" sortOrder="10"/>
     </type>
+
+    <preference for="Magento\Catalog\Controller\Product\View" type="Coffeemug\ControllerExample\Controller\Product\View" />
 </config>
