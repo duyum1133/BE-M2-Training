@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <referenceBlock name="product.info.description" remove="true"/>
+            <block class="Coffeemug\BlockArchitecture\Block\CustomDescription" name="custom.product.description" template="Coffeemug_BlockArchitecture::product/view/description.phtml" group="detailed_info">
+                <arguments>
+                    <argument name="at_call" xsi:type="string">getDescription</argument>
+                    <argument name="at_code" xsi:type="string">description</argument>
+                    <argument name="css_class" xsi:type="string">description</argument>
+                    <argument name="at_label" xsi:type="string">none</argument>
+                    <argument name="title" translate="true" xsi:type="string">Custom Description</argument>
+                    <argument name="sort_order" xsi:type="string">10</argument>
+                </arguments>
+            </block>
+
+            <referenceBlock name="product.attributes">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">Coffeemug_BlockArchitecture::product/view/attributes.phtml</argument>
+                </action>
+
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Custom Attribute</argument>
+                    <argument name="sort_order" xsi:type="string">20</argument>
+                </arguments>
+            </referenceBlock>
+        </referenceBlock>
+    </body>
+</page>
