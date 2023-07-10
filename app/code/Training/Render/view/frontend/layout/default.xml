@@ -15,10 +15,6 @@
             </block>
         </referenceBlock>
 
-        <referenceBlock name="top.links">
-            <block class="Magento\Framework\View\Element\Template" name="custom.link" template="Training_Render::link.phtml" after="-"/>
-        </referenceBlock>
-
         <referenceBlock name="header.links">
             <block class="Magento\Framework\View\Element\Html\Link" name="custom.link" before="-">
                 <arguments>
